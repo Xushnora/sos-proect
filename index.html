@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <h2 class="title">Hello World</h2>
+    <section id="hero">
+        <div class="colors">
+            <header class="header">
+                <div class="container">
+                    <div class="header__row row">
+                        <div class="header__logo-box">
+                            <a class="header__logo-link" href="#">
+                                <img class="header__logo" src="./imgs/logo-sos.svg" alt="logo">
+                            </a>
+                        </div>
+                        <nav class="header__nav nav" id="menuOpen">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">Main</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">about</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">game features</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">System requirements</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">quotes</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__select-box">
+                            <div class="header__lang">
+                                <select class="header__eng">
+                                    <option value="lang" class="header__options">Eng</option>
+                                    <option value="lang" class="header__options">Rus</option>
+                                    <option value="lang" class="header__options">Fra</option>
+                                </select>
+                            </div>
+                            <div class="header__btns btns">
+                                <button class="btns"><i class='bx bxs-basketball'></i></button>
+                                <button class="btns"><i class='bx bxl-steam'></i></button>
+                            </div>
+                            <div class="header__menu-box">
+                                <button class="header__menu" id="menuBtn"><i class='bx bx-menu-alt-right' id="icon"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <h2 class="hero__title">SURVIVE AT ALL COSTS</h2>
+                        <p class="hero__text">Experience new social battle royale game</p>
+                        <button class="hero__btn">Buy Now on Steam | $14.99</button>
+                        <div class="hero__endbox">
+                            <span class="hero__span">The story</span>
+                            <button class="hero__btn-arrow"><i class='bx bx-down-arrow'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <section id="about" class="about">
+        <div class="color">
+            <div class="container">
+
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="js/main.js"></script>
 </body>
+
 </html>

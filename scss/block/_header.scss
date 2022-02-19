@@ -1,4 +1,128 @@
-.title {
-    color: red;
+header {
+    padding-top: 21px;
+    margin-bottom: 170px;
+}
 
+.header__logo {
+    width: 55px;
+    height: 55px;
+}
+.header__nav {
+    @include between();
+}
+
+.nav__list {
+    @include style-none();
+    @include between();
+}
+
+.nav__item {
+    margin-left: 30px;
+}
+
+.header__row {
+    @include between();
+}
+.nav__link {
+    @include link-none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.nav__link:hover {
+    color: $primary-color
+}
+
+.header__select-box {
+    @include between();
+
+}
+.header__select {
+    border: none;
+    background-color: transparent;
+    color: $title-color;
+    background-color: #000;
+}
+
+.btns {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.bxs-basketball {
+    font-size: 35px;
+    color: $primary-color;
+}
+.bxl-steam {
+    font-size: 35px;
+    color: $primary-color;
+}
+
+.header__lang {
+    padding: 0 11px 0 0;
+    margin-right: 38px;
+    border: none;
+    text-transform: uppercase;
+    border: none;
+    border-right: 1px solid rgb(177, 174, 174);
+}
+
+.header__eng {
+    background-color: transparent;
+    width: 55px;
+    border: none;
+    color: $title-color;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.header__eng:focus {
+    outline: none;
+}
+
+.header__options {
+    background-color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+.header__options:active {
+    color: $primary-color;
+}
+
+.header__menu-box {
+    display: none;
+}
+.header__menu {
+    border: none;
+    background-color: transparent;
+}
+
+.bx-menu-alt-right {
+    font-size: 30px;
+    color: $title-color;
+}
+
+.bx-x {
+    font-size: 30px;
+    color: $title-color;
 }
