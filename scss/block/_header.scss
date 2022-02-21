@@ -31,7 +31,7 @@ header {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .nav__link:hover {
@@ -125,4 +125,65 @@ header {
 .bx-x {
     font-size: 30px;
     color: $title-color;
+}
+
+
+@media screen and (max-width: 998px) {
+    .container {
+        width: 90%;
+        padding: 0;
+    }
+
+    .header__menu-box {
+        display: block;
+    }
+
+    .header__btns{
+        display: none;
+    }
+    
+    .header__lang {
+        margin-right: 0;
+    }
+    .header__logo-box {
+        margin: 0;
+    }
+    .header__select-box{
+        margin: 0;
+    }
+    
+    .header__nav{
+        opacity: 0;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 12%;
+        right: -40%;
+        width: 100%;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.733);
+        border-radius: 8px;
+        transition: all 0.4s ease;
+        width: 100%;
+    }
+
+    .nav__item {
+       padding: 10px;
+    }
+
+    .nav__link {
+        font-size: 18px;
+    }
+  
+}
+
+
+.show {
+    right: 0;
+    opacity: 1;
 }
